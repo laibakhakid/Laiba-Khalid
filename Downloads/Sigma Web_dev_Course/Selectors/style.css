@@ -1,0 +1,28 @@
+  /* <!-- Universal Selectors  slects the whole body--> */
+/* *{
+    background-color: blueviolet;
+} */
+#name{
+    background-color: aqua;
+}
+.hello{
+    background-color: rgb(187, 63, 63);
+}
+div p{
+    background-color: rgb(239, 136, 11);
+}
+div>p{
+    background-color: blue;
+}
+a:visited{
+   color: yellow;
+}
+a:hover{
+    background-color: brown;
+}
+a:link{
+    color:green
+}
+a:active{
+    background-color: olivedrab;
+}
