@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms for Sigma Web Development Course - TA</title>
 </head>
+
 <body>
     <h1>Form for TA</h1>
     <form>
-       <div>
-         <label for="username">Enter the uername</label>
-        <input type="text" id="username" name="username" placeholder="Enter your username">
-       </div>
-
-       <div>
-          <input type="radio" id="male" value="male" name="gender" >
-         <label for="male">Male</label>
-       </div>
-         <div>
-             <input type="radio" name="gender" value="female" id="female">
-          <label for="female">Female</label>
-         </div>
-         <div>
-             <input type="checkbox" name="subscribe" value="yes" id="subscribe">
-          <label for="subscribe">subscribe to newsletter</label>
-         </div>
-         <div>
+        <!-- This takes username of specific input -->
+        <div>
+            <label for="username">Enter the uername</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required autofocus
+                pattern="[a-zA-Z0-9]+">
+        </div>
+        <!-- this is the radio button that we can select only one at a time -->
+        <div>
+            <input type="radio" id="male" value="male" name="gender">
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" name="subscribe" value="yes" id="subscribe">
+            <label for="subscribe">subscribe to newsletter</label>
+        </div>
+        <div>
             <textarea name="comment" rows="4" cols="50" placeholder="Enter your thoughts">
 </textarea>
-         </div>
+        </div>
+        <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
     </form>
 </body>
+
 </html>
